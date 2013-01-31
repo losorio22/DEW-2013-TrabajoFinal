@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  cant_part: 1
+  fecha: 2013-01-30
+  hora: 2013-01-30 01:22:34
+
+two:
+  nombre: MyString
+  cant_part: 1
+  fecha: 2013-01-30
+  hora: 2013-01-30 01:22:34

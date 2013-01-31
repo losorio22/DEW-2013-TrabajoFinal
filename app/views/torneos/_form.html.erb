@@ -1,0 +1,22 @@
+<%= simple_form_for(@torneo) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="field">
+    <%= f.input :nombre %>
+  </div>
+  <div class="field">
+    <%= f.input :cant_part %>
+  </div>
+  <div class="field">
+    <%= f.association :local %>
+  </div>
+  <div class="field">
+    <%= f.input :fecha %>
+  </div>
+  <div class="field">
+    <%= f.input :hora %>
+  </div>
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

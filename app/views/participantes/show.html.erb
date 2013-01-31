@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @participante.nombre %>
+</p>
+
+<p>
+  <b>Ap paterno:</b>
+  <%= @participante.ap_paterno %>
+</p>
+
+<p>
+  <b>Ap manterno:</b>
+  <%= @participante.ap_manterno %>
+</p>
+
+<p>
+  <b>Sexo:</b>
+  <%= @participante.sexo %>
+</p>
+
+<p>
+  <b>Tipo doc:</b>
+  <%= @participante.tipo_doc %>
+</p>
+
+<p>
+  <b>Num doc:</b>
+  <%= @participante.num_doc %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%= @participante.direccion %>
+</p>
+
+<p>
+  <b>Distrito:</b>
+  <%= @participante.distrito %>
+</p>
+
+<p>
+  <b>Correo:</b>
+  <%= @participante.correo %>
+</p>
+
+<p>
+  <b>Fec nac:</b>
+  <%= @participante.fec_nac %>
+</p>
+
+
+<%= link_to 'Edit', edit_participante_path(@participante) %> |
+<%= link_to 'Back', participantes_path %>
