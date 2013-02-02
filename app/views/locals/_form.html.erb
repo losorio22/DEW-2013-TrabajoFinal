@@ -1,33 +1,23 @@
-<%= form_for(@local) do |f| %>
-  <% if @local.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@local.errors.count, "error") %> prohibited this local from being saved:</h2>
-
-      <ul>
-      <% @local.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= simple_form_for(@local) do |f| %>
+   <%= f.error_notification %>
 
   <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
+    <%= f.input :nombre %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :direccion %><br />
-    <%= f.text_field :direccion %>
+    <%= f.input :direccion %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :distrito %><br />
-    <%= f.text_field :distrito %>
+    <%= f.input :distrito %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :telf_fijo %><br />
-    <%= f.text_field :telf_fijo %>
+    <%= f.input :telf_fijo %><br />
+    
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.button :submit %>
   </div>
 <% end %>
