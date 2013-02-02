@@ -1,57 +1,47 @@
-<%= form_for(@participante) do |f| %>
-  <% if @participante.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@participante.errors.count, "error") %> prohibited this participante from being saved:</h2>
-
-      <ul>
-      <% @participante.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= simple_form_for(@participante) do |f| %>
+   <%= f.error_notification %>
 
   <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
+    <%= f.input :nombre %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :ap_paterno %><br />
-    <%= f.text_field :ap_paterno %>
+    <%= f.input :ap_paterno %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :ap_manterno %><br />
-    <%= f.text_field :ap_manterno %>
+    <%= f.input :ap_manterno %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :sexo %><br />
-    <%= f.text_field :sexo %>
+    <%= f.input :sexo %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :tipo_doc %><br />
-    <%= f.text_field :tipo_doc %>
+    <%= f.input :tipo_doc %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :num_doc %><br />
-    <%= f.number_field :num_doc %>
+    <%= f.input :num_doc %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :direccion %><br />
-    <%= f.text_field :direccion %>
+    <%= f.input :direccion %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :distrito %><br />
-    <%= f.text_field :distrito %>
+    <%= f.input :distrito %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :correo %><br />
-    <%= f.text_field :correo %>
+    <%= f.input :correo %><br />
+    
   </div>
   <div class="field">
-    <%= f.label :fec_nac %><br />
-    <%= f.date_select :fec_nac %>
+    <%= f.input :fec_nac %><br />
+    
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.button :submit %>
   </div>
 <% end %>
