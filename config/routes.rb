@@ -1,4 +1,5 @@
 MagicGame::Application.routes.draw do
+  root :to => "admin/admin_users#index"
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
