@@ -5,7 +5,7 @@ class CreateTorneos < ActiveRecord::Migration
       t.integer :cant_part
       t.date :fecha
       t.datetime :hora
-      t.references :local
+      t.references :local.nombre
 
       t.timestamps
     end
