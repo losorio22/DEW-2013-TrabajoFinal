@@ -1,0 +1,2 @@
+class TorneosLocalController < ApplicationController
+end
