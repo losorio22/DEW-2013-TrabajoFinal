@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130131021645) do
+ActiveRecord::Schema.define(:version => 20130130065251) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -75,9 +75,11 @@ ActiveRecord::Schema.define(:version => 20130131021645) do
     t.integer  "cant_part"
     t.date     "fecha"
     t.datetime "hora"
+    t.integer  "local_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "local_id"
   end
+
+  add_index "torneos", ["local_id"], :name => "index_torneos_on_local_id"
 
 end
