@@ -1,4 +1,6 @@
 MagicGame::Application.routes.draw do
+  resources :tweets
+
   root :to => "admin/admin_users#index"
   ActiveAdmin.routes(self)
 
