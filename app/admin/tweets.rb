@@ -14,7 +14,6 @@
 ActiveAdmin.register Tweet  do
 
     form do |f|
-   # <%= form_for(@tweet, :url => "user") do |f| %>
       f.inputs "Usuario Tweeter" do
         f.input :user
         f.input :status, :label => "Comentario Tweer"
@@ -25,15 +24,4 @@ ActiveAdmin.register Tweet  do
       f.buttons
     end
 
-  end
-
-
-
-#ActiveAdmin.register Tweet do
-#    show do
-#      h3 Tweet.user
-#      div do
-#        simple_format Tweet.status
-#      end
-#    end
-#  end
+ end
