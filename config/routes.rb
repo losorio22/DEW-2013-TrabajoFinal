@@ -12,6 +12,9 @@ MagicGame::Application.routes.draw do
 
   resources :torneos
 
+  match "user" => "tweets#read_message"
+  match "update" => "tweets#update_status"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

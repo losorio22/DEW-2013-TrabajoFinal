@@ -23,3 +23,9 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+
+  <%= semantic_form_for [:admin, @post] do |f| %>
+    <%= f.inputs :user, :body %>
+    <%= f.buttons :commit %>
+  <% end %>

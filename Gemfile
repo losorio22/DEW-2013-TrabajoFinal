@@ -8,6 +8,7 @@ gem 'rails', '3.2.1'
 gem 'sqlite3'
 gem 'activeadmin'
 gem "simple_form", "~> 2.0.4"
+gem "twitter"
 
 
 # Gems used only for assets and not required
