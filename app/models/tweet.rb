@@ -1,4 +1,11 @@
 class Tweet < ActiveRecord::Base
+  
+ # Twitter.configure do |config|
+ #   config.consumer_key = '4UbJVasz2VEKKVsy0nlIg'
+ #   config.consumer_secret = 'GKsGglSs2hVh5aRamScS59bQJKmnr4EUUmLgVi9Xo'
+ #   config.oauth_token = '1143023234-SjqVRnytfejX2kE1LnCvzaNgG34mrxQsVIF53db'
+ #   config.oauth_token_secret = 'mYxB32QN51IflTkeRTBwYfryhVqRmv40Lez8Sis'
+ # end
 
 Twitter.configure do |config|
     config.consumer_key = 'VXZCK1w2BpERLGJPeLueig'
@@ -26,4 +33,3 @@ Twitter.configure do |config|
     Twitter.update(self.status)
   end
 end
-
