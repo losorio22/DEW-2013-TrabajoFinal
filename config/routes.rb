@@ -1,7 +1,7 @@
 MagicGame::Application.routes.draw do
   resources :tweets
 
-  root :to => "admin/admin_users#index"
+  root :to => "torneos#index"
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

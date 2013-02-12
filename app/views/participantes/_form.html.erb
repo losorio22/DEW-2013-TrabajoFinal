@@ -14,13 +14,19 @@
     
   </div>
   <div class="field">
-    <%= f.input :sexo %><br />
+Sexo
+ <%= f.select :sexo, options_for_select([["Masculino", "Masculino"], ["Femenino", "Femenino"]]) %>
     
-  </div>
+  </div><br />
   <div class="field">
-    <%= f.input :tipo_doc %><br />
+Tipo de Documento
+ <%= f.select :tipo_doc, options_for_select([["DNI", "DNI"], ["Pasaporte", "Pasaporte"]]) %>
     
-  </div>
+  </div><br />
+  
+
+    
+  
   <div class="field">
     <%= f.input :num_doc %><br />
     

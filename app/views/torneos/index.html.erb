@@ -1,4 +1,4 @@
-<h1>Listing torneos</h1>
+<h1>TORNEOS</h1>
 
 <table>
   <tr>
@@ -19,17 +19,15 @@
     <td><%= torneo.local.nombre %></td>
     <td><%= torneo.fecha %></td>
     <td><%= torneo.hora %></td>
-    <td><%= link_to 'Show', torneo %></td>
-    <td><%= link_to 'Edit', edit_torneo_path(torneo) %></td>
-    <td><%= link_to 'Destroy', torneo, confirm: 'Estas seguro de Eliminar?', method: :delete %></td>
+    <td><%= link_to 'Mostrar', torneo %></td>
+    
   </tr>
 <% end %>
 </table>
 
 <br />
 
-[<a href="https://twitter.com/intent/tweet?button_hashtag=TwitterTorneo&text=My%20story%20is%20about%20what's%20happening%20today" class="twitter-hashtag-button" data-lang="en" data-related="jasoncosta">Tweet #TwitterTorneo</a>]
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
-<%= link_to 'New Torneo', new_torneo_path %>
+
+
