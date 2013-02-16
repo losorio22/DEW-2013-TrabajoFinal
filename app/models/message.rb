@@ -1,6 +1,4 @@
-class Torneo < ActiveRecord::Base
-	belongs_to :local
-	has_many :torneo, :through => :local_torneo
+class Message < ActiveRecord::Base
 
 	Pusher.app_id = '36099'
   Pusher.key = 'e77e012c099fe30baeb6'
@@ -12,6 +10,5 @@ class Torneo < ActiveRecord::Base
     logger.info "Hi?"
     Pusher['demoChat'].trigger("message:create",self.to_json)  
   end
-
 
 end

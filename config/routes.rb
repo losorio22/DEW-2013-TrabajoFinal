@@ -1,4 +1,6 @@
 MagicGame::Application.routes.draw do
+  resources :messages
+
   resources :tweets
 
   root :to => "torneos#index"
