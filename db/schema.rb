@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130216071243) do
+ActiveRecord::Schema.define(:version => 20130216081254) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -80,7 +80,6 @@ ActiveRecord::Schema.define(:version => 20130216071243) do
   create_table "torneos", :force => true do |t|
     t.string   "nombre"
     t.integer  "cant_part"
-    t.date     "fecha"
     t.datetime "hora"
     t.integer  "local_id"
     t.datetime "created_at", :null => false
