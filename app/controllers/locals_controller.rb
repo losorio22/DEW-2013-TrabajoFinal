@@ -13,7 +13,7 @@ class LocalsController < ApplicationController
   # GET /locals/1
   # GET /locals/1.json
   def show
-    @local = Local.find(params[:id])
+    @local = Local.find(params[:nombre])
 
     respond_to do |format|
       format.html # show.html.erb

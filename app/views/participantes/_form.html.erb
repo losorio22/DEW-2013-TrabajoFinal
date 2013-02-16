@@ -1,4 +1,4 @@
-<%= simple_form_for(@participante) do |f| %>
+<%= simple_form_for @participante do |f| %>
    <%= f.error_notification %>
 
   <div class="field">
@@ -24,11 +24,8 @@ Tipo de Documento
     
   </div><br />
   
-
-    
-  
   <div class="field">
-    <%= f.input :num_doc %><br />
+  <%= f.input :num_doc %><br />
     
   </div>
   <div class="field">
@@ -37,17 +34,18 @@ Tipo de Documento
   </div>
   <div class="field">
     <%= f.input :distrito %><br />
+    <div class="action">
+    <%= f.button :submit %>
+  </div>
+      <div class="field"><br />
+    <%= f.input :fec_nac %>
     
+  </div>
   </div>
   <div class="field">
     <%= f.input :correo %><br />
     
   </div>
-  <div class="field">
-    <%= f.input :fec_nac %><br />
-    
-  </div>
-  <div class="actions">
-    <%= f.button :submit %>
-  </div>
+
+  
 <% end %>
